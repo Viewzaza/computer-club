@@ -1,0 +1,245 @@
+﻿<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>วิชาฤทธิ์ แก้วอบเชย - Resume</title>
+    <style>
+      
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #e0e0e0;
+           
+            background-image: url('https://kmutnb.ac.th/getattachment/27ba189e-a8ae-4198-bef4-3f7416717edd/.aspx');
+            background-size: cover;
+            background-position: center; 
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh; 
+            overflow-y: scroll; 
+            animation: animateBackground 60s linear infinite; 
+        }
+
+        html, body {
+            height: 100%; 
+        }
+
+        .container {
+            width: 80%;
+            max-width: 900px;
+            background: rgba(255, 255, 255, 0.9); 
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+            padding: 20px; 
+            overflow: hidden;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .header {
+            background: linear-gradient(90deg, #36d1dc, #5b86e5);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            border-radius: 10px 10px 0 0;
+        }
+
+            .header h1 {
+                margin: 0;
+                font-size: 2.5rem;
+                animation: slideInFromLeft 1s ease-in-out;
+            }
+
+        .mainmenu {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+            animation: slideInFromRight 1s ease-in-out;
+        }
+
+            .mainmenu a {
+                padding: 10px 15px;
+                font-weight: bold;
+                text-decoration: none;
+                color: white;
+                background: #36d1dc;
+                margin: 0 5px;
+                border-radius: 5px;
+                transition: background 0.3s, transform 0.3s;
+            }
+
+                .mainmenu a:hover {
+                    color: yellow;
+                    background: #2b5d9e;
+                    transform: scale(1.1);
+                }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 20px;
+        }
+
+            .content img {
+                max-width: 100%;
+                height: auto;
+                margin-right: 20px;
+                border-radius: 10px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3s;
+            }
+
+                .content img:hover {
+                    transform: scale(1.05);
+                }
+
+            .content h2 {
+                margin-top: 0;
+                font-size: 1.8rem;
+                color: #36d1dc;
+                text-align: center;
+            }
+
+        .section {
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background: #f9f9f9;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+            .section h2 {
+                margin-bottom: 10px;
+                font-size: 1.5rem;
+                color: #5b86e5;
+            }
+
+            .section p {
+                font-size: 1rem;
+                line-height: 1.5;
+            }
+
+        .contact-info a, .personal-info a {
+            color: #36d1dc;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+            .contact-info a:hover, .personal-info a:hover {
+                text-decoration: underline;
+                color: #5b86e5;
+            }
+
+        .footer {
+            border-top: 1px solid #ccc;
+            padding: 20px;
+            text-align: center;
+            background-color: #fff;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInFromLeft {
+            from {
+                transform: translateX(-100%);
+            }
+
+            to {
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInFromRight {
+            from {
+                transform: translateX(100%);
+            }
+
+            to {
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes animateBackground {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>วิชาฤทธิ์ แก้วอบเชย - Resume</h1>
+            <div class="mainmenu">
+                <a href="https://tgschool.cit.kmutnb.ac.th/comclub/" target="_blank">Home</a> 
+                <a href="arc01.html">Article 1</a>
+                <a href="arc02.html">Article 2</a>
+                <a href="arc03.html">Article 3</a>
+                <a href="arc04.html">Article 4</a>
+                <a href="arc05.html">Article 5</a>
+            </div>
+        </div>
+        <div class="content">
+            <img src="me.JPG" alt="Profile Picture of วิชาฤทธิ์ แก้วอบเชย" width="400" height="600">
+            <div>
+                <h2>ชื่อ: นาย วิชาฤทธิ์ แก้วอบเชย</h2>
+                <p>ผมจบมาจากโรงเรียนไตรราชวิทยา ขณะนี้ศึกษาอยู่ที่โรงเรียนเตรียมวิศวกรรมศาสตร์ ไทย-เยอรมัน ส่วนตัวผมชอบการเขียนโค้ดบนบอร์ด Arduino หรือ Raspberry Pi และงานอดิเรกของผมคือการอ่านหนังสือ</p>
+                <div class="section contact-info">
+                    <h2>Contact Us</h2>
+                    <p>Email: <a href="mailto:stampmon4064@gmail.com">stampmon4064@gmail.com</a></p>
+                    <p>Facebook: <a href="https://www.facebook.com/wicharit10459/" target="_blank">wicharit keawobchuy</a></p>
+                    <p>IDline: WICHARIT KEAWOBCHUY</p>
+                    <p>IG: <a href="https://www.instagram.com/view_10459/" target="_blank">view_10459</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="section personal-info">
+            <h2>Personal Information - รายละเอียดเกี่ยวกับตัวเรา</h2>
+            <p>Name: Wichaarit Keawobchuy</p>
+            <p>Nickname: View</p>
+            <p>Age: 15</p>
+            <p>Date of Birth: 3 January 2009</p>
+            <p>Nationality: Thai</p>
+            <p>School: <a href="https://tgschool.cit.kmutnb.ac.th/" target="_blank">Thai-German Preengineering School</a>, <a href="https://cit.kmutnb.ac.th/" target="_blank">College of Industrial Technology</a>, <a href="https://www.kmutnb.ac.th/" target="_blank">King Mongkut's University of Technology North Bangkok</a></p>
+        </div>
+        <div class="section education">
+            <h2>Education - การศึกษา</h2>
+            <p>โรงเรียนเตรียมวิศวกรรมศาสตร์ ไทย-เยอรมัน (Since 2024)</p>
+            <p>โรงเรียนไตรราชวิทยา (2012-2023)</p>
+        </div>
+        <div class="section portfolio">
+            <h2>Portfolio - ผลงานต่างๆ/ความสามารถพิเศษ</h2>
+            <p>progarming on the raspberry pi and arduino and coding by C or C++ and pythron</p>
+            <p>Year:since 2022 </p>
+        </div>
+        <div class="footer">
+            <p>&copy; 2024 BY WICHARIT KEAWOBCHUY</p>
+        </div>
+    </div>
+</body>
+</html>

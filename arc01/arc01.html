@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Real-Time Robot Control</title>
+    <style>
+        button {
+            font-size: 20px;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        input[type=range] {
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Real-Time Robot Control</h1>
+    <div>
+        <button onclick="sendCommand('rf' + speedRight.value)">Right Forward</button>
+        <button onclick="sendCommand('rb' + speedRight.value)">Right Backward</button>
+        <br>Right Speed: <input type="range" id="speedRight" min="0" max="1023" value="512">
+    </div>
+    <div>
+        <button onclick="sendCommand('lf' + speedLeft.value)">Left Forward</button>
+        <button onclick="sendCommand('lb' + speedLeft.value)">Left Backward</button>
+        <br>Left Speed: <input type="range" id="speedLeft" min="0" max="1023" value="512">
+    </div>
+    <button onclick="sendCommand('stop')">STOP</button>
+
+    <script>
+    const ws = new WebSocket('ws://' + location.hostname + ':81/');
+
+    ws.onopen = () => console.log("Connected to WebSocket");
+    ws.onmessage = (event) => console.log("Message: " + event.data);
+    ws.onclose = () => console.log("WebSocket closed");
+
+    function sendCommand(cmd) {
+      ws.send(cmd);
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<!-- saved from url=(0094)https://tgschool.cit.kmutnb.ac.th/comclub/member/2024_01/mb_E13_wicharit_keawobchuy/arc02.html -->
+<html lang="th"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<title>วิชาฤทธิ์ แก้วอบเขย - การเริ่มต้นเขียนโค้ดใน Python</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		body {
+			font-family: 'Arial', sans-serif;
+			background-color: #f9f9f9;
+			margin: 0;
+			padding: 0;
+			color: #333;
+		}
+
+		.container {
+			max-width: 1200px;
+			margin: auto;
+			padding: 20px;
+			background-color: #fff;
+			box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+			border-radius: 10px;
+			animation: fadeIn 1s ease-in-out;
+		}
+
+		.header {
+			background-color: #007BFF;
+			color: white;
+			text-align: center;
+			padding: 20px;
+			font-size: 2.5em;
+			border-radius: 10px 10px 0 0;
+			animation: slideIn 1s ease-in-out;
+		}
+
+		nav {
+			display: flex;
+			justify-content: center;
+			background-color: #007BFF;
+			padding: 10px 0;
+			border-radius: 0 0 10px 10px;
+			animation: slideIn 1s ease-in-out;
+		}
+
+			nav a {
+				padding: 10px 20px;
+				color: white;
+				text-decoration: none;
+				font-weight: bold;
+				transition: background-color 0.3s, color 0.3s;
+			}
+
+				nav a:hover {
+					background-color: #0056b3;
+					color: #fff;
+					border-radius: 5px;
+				}
+
+		.content {
+			display: grid;
+			grid-template-columns: 1fr 2fr;
+			gap: 20px;
+			margin-top: 20px;
+		}
+
+			.content img {
+				width: 100%;
+				border-radius: 10px;
+				transition: transform 0.3s;
+			}
+
+				.content img:hover {
+					transform: scale(1.05);
+				}
+
+		.article {
+			background-color: #f0f8ff;
+			padding: 20px;
+			border-radius: 10px;
+			box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+		}
+
+			.article h2 {
+				color: #007BFF;
+				margin-top: 0;
+				animation: fadeIn 2s ease-in-out;
+			}
+
+			.article p, .article ul, .article pre {
+				line-height: 1.6;
+				animation: fadeIn 2s ease-in-out;
+			}
+
+		pre {
+			background-color: #f8f8f8;
+			padding: 10px;
+			border-radius: 5px;
+			overflow-x: auto;
+		}
+
+		code {
+			font-family: 'Courier New', Courier, monospace;
+		}
+
+		@keyframes fadeIn {
+			from {
+				opacity: 0;
+			}
+
+			to {
+				opacity: 1;
+			}
+		}
+
+		@keyframes slideIn {
+			from {
+				transform: translateY(-100%);
+			}
+
+			to {
+				transform: translateY(0);
+			}
+		}
+
+		@media (max-width: 768px) {
+			.content {
+				grid-template-columns: 1fr;
+			}
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="header">
+			การเริ่มต้นเขียนโค้ดใน Python
+		</div>
+		<nav>
+			<a href="https://tgschool.cit.kmutnb.ac.th/comclub/member/2024_01/mb_E13_wicharit_keawobchuy/index.html">Home</a>
+			<a href="https://tgschool.cit.kmutnb.ac.th/comclub/member/2024_01/mb_E13_wicharit_keawobchuy/arc01.html">Article1</a>
+			<a href="https://tgschool.cit.kmutnb.ac.th/comclub/member/2024_01/mb_E13_wicharit_keawobchuy/arc02.html">Article2</a>
+			<a href="https://tgschool.cit.kmutnb.ac.th/comclub/member/2024_01/mb_E13_wicharit_keawobchuy/arc03.html">Article3</a>
+			<a href="https://tgschool.cit.kmutnb.ac.th/comclub/member/2024_01/mb_E13_wicharit_keawobchuy/arc04.html">Article4</a>
+			<a href="https://tgschool.cit.kmutnb.ac.th/comclub/member/2024_01/mb_E13_wicharit_keawobchuy/arc05.html">Article5</a>
+		</nav>
+	</header>
+
+	<div class="container">
+		<div class="content">
+			<img src="./วิชาฤทธิ์ แก้วอบเขย - การเริ่มต้นเขียนโค้ดใน Python_files/03.jpg" alt="Python coding image">
+			<div class="article">
+				<h2>การเริ่มต้นเขียนโค้ดใน Python</h2>
+				<p>
+					Python เป็นภาษาการเขียนโปรแกรมที่มีความนิยมอย่างแพร่หลายเนื่องจากความง่ายต่อการเรียนรู้และความยืดหยุ่นในการใช้งาน นอกจากนี้ยังมีชุมชนผู้ใช้งานขนาดใหญ่และมีไลบรารีมากมายที่สามารถช่วยให้การพัฒนาโปรแกรมเป็นไปอย่างรวดเร็วและมีประสิทธิภาพ ในบทความนี้จะกล่าวถึงขั้นตอนพื้นฐานในการเริ่มต้นเขียนโค้ดใน Python รวมถึงตัวอย่างโค้ดและคำอธิบายสำหรับผู้เริ่มต้น
+				</p>
+
+				<h3>การติดตั้ง Python</h3>
+				<p>
+					ขั้นตอนแรกในการเริ่มต้นเขียนโค้ดใน Python คือการติดตั้ง Python ลงในเครื่องคอมพิวเตอร์ของคุณ คุณสามารถดาวน์โหลด Python ได้จากเว็บไซต์ทางการที่ <a href="https://www.python.org/" target="_blank">python.org</a>
+				</p>
+				<p>
+					1. เลือกเวอร์ชันที่ต้องการดาวน์โหลด โดยทั่วไปจะแนะนำให้ใช้เวอร์ชันล่าสุดที่มีการสนับสนุน<br>
+					2. ทำการติดตั้งตามคำแนะนำที่ปรากฏบนหน้าจอ
+				</p>
+				<p>
+					หลังจากติดตั้งเสร็จเรียบร้อยแล้ว คุณสามารถตรวจสอบการติดตั้งได้โดยเปิดเทอร์มินัล (Terminal) หรือ Command Prompt และพิมพ์คำสั่ง:
+				</p>
+				<pre><code>python --version</code></pre>
+				<p>
+					หากมีการติดตั้ง Python เรียบร้อยแล้ว คุณจะเห็นหมายเลขเวอร์ชันของ Python ที่ติดตั้งอยู่
+				</p>
+
+				<h3>เครื่องมือการเขียนโค้ด</h3>
+				<p>
+					สำหรับการเขียนโค้ดใน Python คุณสามารถใช้เครื่องมือหลายประเภท ทั้งที่เป็น Text Editor และ Integrated Development Environment (IDE) ขึ้นอยู่กับความสะดวกและความถนัดของผู้ใช้งาน:
+				</p>
+				<ul>
+					<li><strong>IDLE</strong>: มาพร้อมกับการติดตั้ง Python เป็นเครื่องมือที่ง่ายและเบื้องต้น</li>
+					<li><strong>PyCharm</strong>: เป็น IDE ที่มีคุณสมบัติครบครันสำหรับการพัฒนา Python</li>
+					<li><strong>VS Code</strong>: เป็น Text Editor ที่มีปลั๊กอินสำหรับการพัฒนา Python</li>
+					<li><strong>Jupyter Notebook</strong>: เหมาะสำหรับการเขียนโค้ดที่เน้นการวิเคราะห์ข้อมูลและการทำงานที่เป็นขั้นตอน</li>
+				</ul>
+
+				<h3>รู้จักกับโครงสร้างพื้นฐานของภาษา Python</h3>
+				<p>
+					Python มีโครงสร้างพื้นฐานที่อ่านง่ายและเขียนง่าย ซึ่งเหมาะสำหรับผู้เริ่มต้น นี่คือตัวอย่างบางส่วน:
+				</p>
+
+				<h4>การประกาศตัวแปร</h4>
+				<p>ใน Python ไม่จำเป็นต้องประกาศประเภทของตัวแปร สามารถกำหนดค่าให้กับตัวแปรได้โดยตรง</p>
+				<pre><code>x = 10
+y = "Hello"</code></pre>
+
+				<h4>การใช้การควบคุมการทำงาน (Control Flow)</h4>
+				<p>การควบคุมการทำงานใน Python ทำได้ง่ายและชัดเจน เช่น การใช้เงื่อนไข (if-elif-else) และการใช้ลูป (for, while)</p>
+
+				<h5>เงื่อนไข (if-elif-else)</h5>
+				<pre><code>if x &gt; 5:
+    print("x is greater than 5")
+elif x == 5:
+    print("x is 5")
+else:
+    print("x is less than 5")</code></pre>
+
+				<h5>ลูป (for, while)</h5>
+				<pre><code>for i in range(5):
+    print(i)
+
+i = 0
+while i &lt; 5:
+    print(i)
+    i += 1</code></pre>
+
+				<h3>การใช้งานฟังก์ชัน</h3>
+				<p>ฟังก์ชันใน Python ช่วยให้โค้ดมีความเป็นระเบียบและง่ายต่อการทำความเข้าใจ</p>
+				<pre><code>def greet(name):
+    return f"Hello, {name}!"
+
+print(greet("Alice"))</code></pre>
+
+				<h3>การทำงานกับโครงสร้างข้อมูล</h3>
+				<p>Python มีโครงสร้างข้อมูลหลายประเภทที่มีประโยชน์ในการพัฒนาโปรแกรม</p>
+
+				<h4>List</h4>
+				<pre><code>numbers = [1, 2, 3, 4, 5]
+print(numbers[0])</code></pre>
+
+				<h4>Dictionary</h4>
+				<pre><code>ages = {"Alice": 25, "Bob": 30}
+print(ages["Alice"])</code></pre>
+
+				<h4>Tuple และ Set</h4>
+				<pre><code>coordinates = (10, 20)
+unique_numbers = {1, 2, 3, 4, 4}</code></pre>
+
+				<h3>การจัดการไฟล์</h3>
+				<p>Python สามารถอ่านและเขียนไฟล์ได้อย่างง่ายดาย</p>
+				<pre><code># การเขียนไฟล์
+with open('example.txt', 'w') as f:
+    f.write("Hello, World!")
+
+# การอ่านไฟล์
+with open('example.txt', 'r') as f:
+    content = f.read()
+    print(content)</code></pre>
+
+				<h3>การใช้งานไลบรารีเพิ่มเติม</h3>
+				<p>Python มีไลบรารีมากมายที่สามารถติดตั้งและนำมาใช้งานได้ เช่น NumPy สำหรับการคำนวณทางคณิตศาสตร์</p>
+				<pre><code>pip install numpy</code></pre>
+				<pre><code>import numpy as np
+arr = np.array([1, 2, 3, 4])
+print(arr)</code></pre>
+
+				<h3>ข้อดีของการเขียนโค้ดใน Python</h3>
+				<ul>
+					<li><strong>เรียนรู้ง่าย</strong>: Python มีไวยากรณ์ที่อ่านง่ายและมีโครงสร้างที่ชัดเจน ทำให้เหมาะสำหรับผู้เริ่มต้น</li>
+					<li><strong>มีชุมชนผู้ใช้ขนาดใหญ่</strong>: ชุมชนผู้ใช้ Python ขนาดใหญ่ช่วยให้คุณสามารถค้นหาความช่วยเหลือและทรัพยากรต่าง ๆ ได้ง่าย</li>
+					<li><strong>มีไลบรารีมากมาย</strong>: มีไลบรารีมากมายที่ช่วยในการพัฒนาโปรแกรมในหลายๆ ด้าน เช่น การวิเคราะห์ข้อมูล, การพัฒนาเว็บ, การเรียนรู้ของเครื่อง (Machine Learning)</li>
+					<li><strong>รองรับการทำงานหลากหลายแพลตฟอร์ม</strong>: Python สามารถทำงานได้บนหลายระบบปฏิบัติการ เช่น Windows, MacOS, และ Linux</li>
+				</ul>
+
+				<h3>ข้อเสียของการเขียนโค้ดใน Python</h3>
+				<ul>
+					<li><strong>ประสิทธิภาพการทำงาน</strong>: Python ทำงานช้ากว่าภาษาที่คอมไพล์อย่าง C หรือ C++ เนื่องจากเป็นภาษาที่ตีความ (Interpreted Language)</li>
+					<li><strong>การจัดการหน่วยความจำ</strong>: Python มีการจัดการหน่วยความจำโดยอัตโนมัติ ซึ่งบางครั้งอาจทำให้การทำงานไม่เต็มประสิทธิภาพเท่าที่ควร</li>
+					<li><strong>การทำงานแบบมัลติเธรด</strong>: Python มีข้อจำกัดในการทำงานแบบมัลติเธรดเนื่องจาก Global Interpreter Lock (GIL) ซึ่งทำให้การทำงานของโค้ดมัลติเธรดไม่สามารถทำงานพร้อมกันอย่างแท้จริงได้</li>
+				</ul>
+
+				<h3>สรุป</h3>
+				<p>
+					Python เป็นภาษาการเขียนโปรแกรมที่มีความนิยมอย่างมากในช่วงหลายปีที่ผ่านมา ด้วยคุณสมบัติที่ง่ายต่อการอ่านและเขียน รวมถึงมีไลบรารีและเครื่องมือที่หลากหลาย ทำให้เป็นภาษาที่เหมาะสำหรับการพัฒนาโปรแกรมในหลายๆ ด้าน ไม่ว่าจะเป็นการวิเคราะห์ข้อมูล, การพัฒนาเว็บแอปพลิเคชัน, การเรียนรู้ของเครื่อง (Machine Learning)
+				</p>
+			</div>
+		</div>
+	</div>
+
+
+</body></html>

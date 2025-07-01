@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - HyperText Markup Language</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            font-size: 18px;
+            color: #555;
+            line-height: 1.6;
+        }
+        .code-block {
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-left: 4px solid #4682B4;
+            margin: 20px 0;
+        }
+        pre {
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML - HyperText Markup Language</h1>
+
+    <p>HTML หรือ HyperText Markup Language เป็นภาษาคอมพิวเตอร์ที่ใช้สำหรับสร้างและออกแบบโครงสร้างของหน้าเว็บเพจ
+    เป็นภาษาพื้นฐานที่นักพัฒนาเว็บทุกคนต้องรู้จัก เนื่องจาก HTML เป็นตัวกำหนดโครงสร้างและเนื้อหาของเว็บไซต์
+    โดยทำงานร่วมกับ CSS (Cascading Style Sheets) และ JavaScript เพื่อทำให้หน้าเว็บมีลักษณะสวยงามและมีฟังก์ชันต่างๆ</p>
+
+    <h2>โครงสร้างพื้นฐานของ HTML</h2>
+    <p>HTML ใช้แท็ก (tag) ในการระบุโครงสร้างและเนื้อหาของเอกสาร แท็กจะถูกเขียนเป็นคู่ มีแท็กเปิดและแท็กปิด เช่น &lt;html&gt; และ &lt;/html&gt; 
+    โดยมีข้อยกเว้นบางแท็กที่ไม่ต้องปิด เช่น &lt;img&gt; หรือ &lt;br&gt; ซึ่งใช้สำหรับแทรกรูปภาพหรือขึ้นบรรทัดใหม่</p>
+
+    <div class="code-block">
+        <pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;ตัวอย่างเว็บไซต์&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;ยินดีต้อนรับสู่เว็บไซต์ของเรา&lt;/h1&gt;
+    &lt;p&gt;นี่คือย่อหน้าของเว็บไซต์&lt;/p&gt;
+    &lt;a href="https://www.example.com"&gt;คลิกที่นี่เพื่อเข้าสู่เว็บไซต์ตัวอย่าง&lt;/a&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+        </pre>
+    </div>
+
+    <p>ในตัวอย่างข้างต้น:</p>
+    <ul>
+        <li>&lt;html&gt; และ &lt;/html&gt; เป็นแท็กที่ใช้บอกว่าเนื้อหานี้คือไฟล์ HTML</li>
+        <li>&lt;head&gt; และ &lt;/head&gt; ใช้ในการกำหนดข้อมูลทั่วไปของเอกสาร เช่น ชื่อเอกสาร (&lt;title&gt;)</li>
+        <li>&lt;body&gt; และ &lt;/body&gt; คือตัวแทนของเนื้อหาหลักที่จะแสดงบนหน้าเว็บเพจ</li>
+        <li>&lt;h1&gt; เป็นแท็กสำหรับหัวข้อหลัก</li>
+        <li>&lt;p&gt; เป็นแท็กสำหรับย่อหน้า</li>
+        <li>&lt;a&gt; ใช้สำหรับลิงก์ไปยังหน้าหรือเว็บไซต์อื่นๆ</li>
+    </ul>
+
+    <h2>องค์ประกอบหลักของ HTML</h2>
+    <h3>Element (องค์ประกอบ)</h3>
+    <p>ใน HTML แต่ละแท็กเรียกว่า "Element" ซึ่งประกอบด้วยแท็กเปิดและแท็กปิด เช่น &lt;h1&gt; และ &lt;/h1&gt;</p>
+
+    <h3>Attribute (แอตทริบิวต์)</h3>
+    <p>แอตทริบิวต์เป็นคุณสมบัติที่ใช้ในการกำหนดรายละเอียดเพิ่มเติมให้กับแท็ก เช่น &lt;a href="https://www.example.com"&gt;ลิงก์&lt;/a&gt; ซึ่ง href เป็นแอตทริบิวต์ของแท็ก &lt;a&gt; 
+    ใช้เพื่อกำหนดปลายทางของลิงก์</p>
+
+    <h3>Block-level elements และ Inline elements</h3>
+    <p><strong>Block-level elements</strong> เป็นองค์ประกอบที่แสดงผลในรูปแบบบล็อก เช่น &lt;div&gt;, &lt;h1&gt;, &lt;p&gt; ฯลฯ</p>
+    <p><strong>Inline elements</strong> จะแสดงผลในแนวเดียวกับข้อความ เช่น &lt;a&gt;, &lt;span&gt;, &lt;img&gt; ฯลฯ</p>
+
+    <h2>ความสำคัญของ HTML ในการพัฒนาเว็บ</h2>
+    <p>HTML เป็นภาษาพื้นฐานที่สำคัญสำหรับการสร้างเว็บไซต์ เพราะเป็นภาษาที่ทุกเว็บเบราว์เซอร์สามารถเข้าใจและตีความได้ 
+    นอกจากนี้ยังทำงานร่วมกับภาษาอื่นๆ เพื่อสร้างหน้าเว็บที่มีประสิทธิภาพและน่าสนใจ</p>
+
+    <h3>การใช้ HTML ร่วมกับ CSS และ JavaScript</h3>
+    <p>HTML จะเป็นโครงสร้างพื้นฐานของเว็บไซต์ แต่การเพิ่มความสวยงามและความสามารถเพิ่มเติมต้องอาศัยภาษา CSS และ JavaScript:</p>
+    <ul>
+        <li><strong>CSS (Cascading Style Sheets)</strong> ใช้ในการกำหนดรูปแบบและการจัดแต่งหน้าตาของเว็บไซต์ เช่น สี ขนาดตัวอักษร และการจัดวางองค์ประกอบ</li>
+        <li><strong>JavaScript</strong> เป็นภาษาโปรแกรมที่ใช้ในการเพิ่มฟังก์ชันและโต้ตอบกับผู้ใช้ เช่น การสร้างแบบฟอร์มที่สามารถตรวจสอบข้อมูลได้ทันที</li>
+    </ul>
+
+    <h2>สรุป</h2>
+    <p>HTML เป็นภาษาที่มีความสำคัญในการพัฒนาเว็บไซต์ เป็นพื้นฐานที่นักพัฒนาเว็บควรเรียนรู้ โดยการใช้ HTML 
+    จะช่วยในการสร้างโครงสร้างของเว็บไซต์ที่สามารถแสดงผลได้ในทุกเว็บเบราว์เซอร์ และการใช้ร่วมกับ CSS และ JavaScript 
+    จะช่วยทำให้เว็บไซต์ดูดีและใช้งานได้สะดวกยิ่งขึ้น</p>
+</body>
+</html>
